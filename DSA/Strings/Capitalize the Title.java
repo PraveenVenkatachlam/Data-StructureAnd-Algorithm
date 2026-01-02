@@ -1,3 +1,5 @@
+//! Leetcode 2129. Capitalize the Title
+//* TC: O(n)
 class Solution {
 	public String capitalizeTitle(String title) {
 
@@ -21,4 +23,41 @@ class Solution {
 
 		return String.valueOf(ch); // return the final result by converting the char array into string
 	}
+}
+
+//! MY APPROACH
+class Solution {
+    public String capitalizeTitle(String title) {
+
+        String[] words = title.split(" ");
+        StringBuilder result = new StringBuilder();
+
+        for (String word : words) {
+            if (word.length() > 2) {
+                String cap = Character.toUpperCase(word.charAt(0)) +
+                              word.substring(1).toLowerCase();
+                result.append(cap);
+            } else {
+                result.append(word.toLowerCase());
+            }
+            result.append(" ");
+        }
+
+        return result.toString().trim();
+    }
+}
+
+or
+class Solution {
+    public String capitalizeTitle(String title) {
+        String[] words = title.split(" ");
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].length() <= 2) {
+                words[i] = words[i].toLowerCase();
+            } else {
+                words[i] = words[i].substring(0, 1).toUpperCase() + words[i].substring(1).toLowerCase();
+            }
+        }
+        return String.join(" ", words);
+    }
 }

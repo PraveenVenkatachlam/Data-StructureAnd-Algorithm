@@ -23,6 +23,9 @@ class Solution {
         }else{
            map.put(num,1);
         }
+
+        //or
+         //map.put(num,map.getOrDefault(num,0)+1);
     }
    for(Map.Entry<Integer,Integer> pair:map.entrySet()){
     if(pair.getValue()==1){
@@ -32,3 +35,4 @@ class Solution {
 return 0;
     }
 }
+ 
