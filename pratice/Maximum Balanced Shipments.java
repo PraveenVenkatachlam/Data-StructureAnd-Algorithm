@@ -1,4 +1,5 @@
-class Solution {
+ //! 3638. LeetCode
+ class Solution {
        public int maxBalancedShipments(int[] weight) {
         int res = 0;
         for (int i = 0; i + 1 < weight.length; i++) {
