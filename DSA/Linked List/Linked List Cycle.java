@@ -1,4 +1,6 @@
 //! 141. Linked List Cycle
+//? Time Complexity: O(n)
+//? Space Complexity: O(1)
 public class Solution {
     public boolean hasCycle(ListNode head) {
         

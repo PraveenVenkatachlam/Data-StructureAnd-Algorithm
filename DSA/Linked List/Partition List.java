@@ -1,4 +1,6 @@
 //! 86. Partition List
+//? Time Complexity: O(n)
+//? Space Complexity: O(1)
 /**
  * Definition for singly-linked list.
  * public class ListNode {

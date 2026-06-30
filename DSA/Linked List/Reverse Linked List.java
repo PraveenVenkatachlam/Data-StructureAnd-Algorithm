@@ -11,6 +11,8 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+// Time complexity: O(n)
+// Space complexity: O(1)
 class Solution {
     public ListNode reverseList(ListNode head) {
 

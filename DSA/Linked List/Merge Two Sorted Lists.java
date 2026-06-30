@@ -9,6 +9,8 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+Time complexity: O(m + n)
+Space complexity: O(1)
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         
@@ -26,7 +28,13 @@ class Solution {
             }
             res=res.next;
         }
-        res.next =(list1!=null) ? list1 : list2;
+    res.next = (list1 != null) ? list1 : list2;
+        //? or
+        //           if (list1 != null) {
+        //     res.next = list1;
+        // } else {
+        //     res.next = list2;
+        // }
         return dummy.next;
     }
 }

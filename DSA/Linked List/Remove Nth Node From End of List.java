@@ -1,4 +1,6 @@
 //! 19. Remove Nth Node From End of List
+//? Time Complexity: O(n)
+//? Space Complexity: O(1)
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy= new ListNode(-1,head);
