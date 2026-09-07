@@ -1,6 +1,6 @@
 //! 560 subarraySum
-//TC:O(N 2)
-//SC:O(1)
+//?TC:O(N 2)
+//?SC:O(1)
 class Solution {
     public int subarraySum(int[] nums, int k) {
         HashMap<Integer,Integer> map=new HashMap<>();
